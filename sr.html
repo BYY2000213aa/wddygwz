@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+		<title>逼真的玻璃卡片悬停效果</title>
+		<link rel="stylesheet" href="./css/sr.css">
+		<script type="text/javascript" src="./js/sr.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="card">
+				<div class="content">
+					<h2>01</h2>
+					<h3>雪</h3>
+					<p>你想拥有你从未拥有过的东西那么你必须去做你从未做过的事情</p>
+					<a href="#">敖雪</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<h2>02</h2>
+					<h3>幽</h3>
+					<p>朕统六国，天下归一，筑长城以镇九州龙脉，卫我大秦、护我社稷。朕以始皇之名在此立誓！朕在，当守土开疆，扫平四夷，定我大秦万世之基！朕亡，亦将身化龙魂，佑我华夏永世不衰！此誓，日月为证，天地共鉴，仙魔鬼神共听之！
+					</p>
+					<a href="#">秦溟</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content">
+					<h2>03</h2>
+					<h3>鲸</h3>
+					<p>一身清贫怎敢入繁华，二袖清风怎敢误佳人，三生有幸怎敢遇见你，四目相对怎敢目无你，五行皆空怎敢奢求你，六道轮回怎敢忘记你，七情藏心怎敢不爱你，八面玲珑怎敢敷衍你，九死一生怎敢辜负你，十面埋伏怎敢舍弃你。
+					</p>
+					<a href="#">鲸落</a>
+				</div>
+			</div>
+		</div>
+		<script>
+			// vanilla-tilt.js是一个平滑的3D倾斜JS库，具体参数配置度娘可查到
+			VanillaTilt.init(document.querySelectorAll(".card"), {
+				max: 15, //最大倾斜度数
+				speed: 400, //倾斜转换的速度
+				glare: true, //是否开启眩光效果
+				"max-glare": 1 //最大眩光的不透明度
+			})
+		</script>
+	</body>
+
+</html>
